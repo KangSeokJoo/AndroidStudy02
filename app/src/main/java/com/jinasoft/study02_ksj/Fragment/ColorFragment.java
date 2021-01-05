@@ -33,6 +33,7 @@ public class ColorFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_color, container, false);
         FragTV = (TextView)view.findViewById(R.id.FragAct_TV);
+        FragTV.setBackgroundColor(fragcolor);
         return view;
     }
 
@@ -40,7 +41,7 @@ public class ColorFragment extends Fragment {
         //텍스트뷰의 배경색을 변경
         fragcolor = color;
         if (FragTV != null){
-            FragTV.setBackgroundColor(color);
+            FragTV.setBackgroundColor(fragcolor);
         }
     }
 }

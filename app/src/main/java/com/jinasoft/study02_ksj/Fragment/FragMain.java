@@ -36,7 +36,7 @@ public class FragMain extends AppCompatActivity {
         //랜덤한 생각 설정
         fragment.setColor(Color.rgb(red,green,blue));
         getSupportFragmentManager().beginTransaction() //겟서포트프래그맨트매니저를  통해서 replace() 매서드로 프레그 영역에 이 프래그맨트로 교체하라는 명령
-                .replace(R.id.FragAct_Frag)            // 교체 대신 삭제를 원하면 remove() 메서드
+                .replace(R.id.FragAct_Frag, fragment)  // 교체 대신 삭제를 원하면 remove() 메서드
                 .commit();                             // 추가를 원하면 ~~.beginTransaction().add(R.~~~).commit();
     }
 }

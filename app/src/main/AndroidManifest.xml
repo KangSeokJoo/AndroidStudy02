@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name=".Callback.CallbackMain"></activity>
+        <activity android:name=".ScreenSlide.ScreenMain"></activity>
+        <activity android:name=".Callback.CallbackMain" />
         <activity android:name=".Fragment.FragMain" />
         <activity android:name=".AdapterView.AdapterView" />
         <activity android:name=".DisplayRotation.DisplayRoatation" />

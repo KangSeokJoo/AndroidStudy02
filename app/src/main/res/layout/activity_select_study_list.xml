@@ -82,9 +82,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Selcet_ScrollBTN"
-        android:text="스크롤뷰 사용하기"
-        app:layout_constraintVertical_bias="0.6"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="좌우로 밀리는 화면 만들기"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/Selcet_CallBTN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

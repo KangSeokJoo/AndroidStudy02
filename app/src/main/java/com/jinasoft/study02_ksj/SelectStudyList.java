@@ -29,6 +29,7 @@ public class SelectStudyList extends AppCompatActivity {
         Button btn4 = (Button) findViewById(R.id.Selcet_DisplayBTN);
         Button btn5 = (Button) findViewById(R.id.Selcet_FragBTN);
         Button btn6 = (Button) findViewById(R.id.Selcet_CallBTN);
+//        Button btn7 = (Button) findViewById(R.id.Selcet_ScreenBTN);
 
         btn1.setOnClickListener(view -> {
             Log.d("btn1_btn", "활성");
@@ -60,6 +61,11 @@ public class SelectStudyList extends AppCompatActivity {
             Intent intent = new Intent(SelectStudyList.this, CallbackMain.class);
             startActivity(intent);
         });
+//        btn7.setOnClickListener(view -> {
+//            Log.d("btn7_btn", "활성");
+//            Intent intent = new Intent(SelectStudyList.this, ScreenMain.class);
+//            startActivity(intent);
+//        });
 
 //        btn.setOnClickListener(new View.OnClickListener() {  원래 쓰던 Onclick 식
 //            @Override
