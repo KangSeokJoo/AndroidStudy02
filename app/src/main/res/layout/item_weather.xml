@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<!--    아이템 하나가 화면 가득 차면 안돼니까 wrap 으로 하는거임-->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Item_WeatherIV"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/Item_CityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도시 명"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/Item_TempTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="기온" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
