@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/FragAct_LL"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Fragment.FragMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FragAct_FL">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/FragAct_Frag"
+            android:name="com.jinasoft.study02_ksj.Fragment.ColorFragment"
+            tools:layout="@layout/fragment_color"/>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="change"
+        android:text="교체"/>
+</LinearLayout>

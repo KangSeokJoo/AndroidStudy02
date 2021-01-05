@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -11,8 +12,8 @@ import com.jinasoft.study02_ksj.R;
 
 public class DisplayRoatation extends AppCompatActivity {
 
-    int Level = 0;
-    int Score = 0;
+    private int Level = 0;
+    private int Score = 0;
 
     static final String STATE_SCORE = "playScore";
     static final String STATE_LEVEL = "playLevel";
@@ -27,24 +28,26 @@ public class DisplayRoatation extends AppCompatActivity {
         Button LvUpBTN = (Button)findViewById(R.id.DisplayAct_LVUpBTN);
         Button ScoreUpBTN = (Button)findViewById(R.id.DisplayAct_SCOREUpBTN);
 
-        DisplayLVTV.setText("레벨 :" + Level);
-        DisplaySCORETV.setText("점수 :" + Score);
-
         if (savedInstanceState == null){
             //초기화할 코드
+//            Log.d("확인용","너야?");
         }else {
             //상태복원
             Level = savedInstanceState.getInt(STATE_LEVEL);
             Score = savedInstanceState.getInt(STATE_SCORE);
             DisplayLVTV.setText("레벨 :" + Level);
             DisplaySCORETV.setText("점수 :" + Score);
+
         }
 
         LvUpBTN.setOnClickListener(view -> {
             Level++;
+            DisplayLVTV.setText("레벨 :" + Level);
+            Log.d("확인","돼니?");
         });
         ScoreUpBTN.setOnClickListener(view -> {
             Score += 100;
+            DisplaySCORETV.setText("점수 :" + Score);
         });
 
     }

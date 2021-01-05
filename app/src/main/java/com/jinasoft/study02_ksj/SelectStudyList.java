@@ -9,9 +9,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.jinasoft.study02_ksj.AdapterView.AdapterView;
+import com.jinasoft.study02_ksj.Callback.CallbackMain;
 import com.jinasoft.study02_ksj.Direct.DirectGo;
 import com.jinasoft.study02_ksj.DisplayRotation.DisplayRoatation;
 import com.jinasoft.study02_ksj.EmailSave.EmailSave;
+import com.jinasoft.study02_ksj.Fragment.FragMain;
 
 
 public class SelectStudyList extends AppCompatActivity {
@@ -25,6 +27,8 @@ public class SelectStudyList extends AppCompatActivity {
         Button btn2 = (Button) findViewById(R.id.Selcet_EmailBTN);
         Button btn3 = (Button) findViewById(R.id.Selcet_DirectBTN);
         Button btn4 = (Button) findViewById(R.id.Selcet_DisplayBTN);
+        Button btn5 = (Button) findViewById(R.id.Selcet_FragBTN);
+        Button btn6 = (Button) findViewById(R.id.Selcet_CallBTN);
 
         btn1.setOnClickListener(view -> {
             Log.d("btn1_btn", "활성");
@@ -44,6 +48,16 @@ public class SelectStudyList extends AppCompatActivity {
         btn4.setOnClickListener(view -> {
             Log.d("btn4_btn", "활성");
             Intent intent = new Intent(SelectStudyList.this, DisplayRoatation.class);
+            startActivity(intent);
+        });
+        btn5.setOnClickListener(view -> {
+            Log.d("btn5_btn", "활성");
+            Intent intent = new Intent(SelectStudyList.this, FragMain.class);
+            startActivity(intent);
+        });
+        btn6.setOnClickListener(view -> {
+            Log.d("btn6_btn", "활성");
+            Intent intent = new Intent(SelectStudyList.this, CallbackMain.class);
             startActivity(intent);
         });
 
